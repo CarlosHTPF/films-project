@@ -57,10 +57,9 @@ http://localhost:5173
  - Lista de series (SerieList)
 
  Edição das series
+![alt text](./assets/image-3.png)
 
 ![alt text](/assets/image-5.png)
-
-![alt text](./assets/image-3.png)
 ---
 
 ## Componentes
