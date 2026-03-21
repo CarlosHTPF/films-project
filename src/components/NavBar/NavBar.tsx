@@ -1,26 +1,57 @@
+import { NavLink } from "react-router-dom"
 import './NavBar.css'
-import { Link } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 export default function NavBar() {
   return (
-    <nav className="navbar">
-      <ul className='navbar-list'>
-        <li className='itens'>
-          <Link to="/">Página Inicial</Link>
-        </li>
+    <nav className="navbar navbar-expand-lg navbar-dark custom-navbar px-4">
+      
+      {/* Logo */}
+      <NavLink className="navbar-brand" to="/">
+        SerieJournal
+      </NavLink>
 
-        <li className='itens'>
-          <Link to="/sobre">Sobre</Link>
-        </li>
+      {/* Botão mobile */}
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
 
-        <li className='itens'>
-          <Link to="/SerieForm">Cadastrar Séries</Link>
-        </li>
+      {/* Links */}
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav ms-auto">
 
-        <li className='itens'>
-          <Link to="/SerieList">Lista de Séries</Link>
-        </li>
-      </ul>
+          <li className="nav-item">
+            <NavLink to="/" className="nav-link">
+              Página Inicial
+            </NavLink>
+          </li>
+
+          <li className="nav-item">
+            <NavLink to="/sobre" className="nav-link">
+              Sobre
+            </NavLink>
+          </li>
+
+          <li className="nav-item">
+            <NavLink to="/SerieForm" className="nav-link">
+              Cadastrar
+            </NavLink>
+          </li>
+
+          <li className="nav-item">
+            <NavLink to="/SerieList" className="nav-link">
+              Séries
+            </NavLink>
+          </li>
+
+        </ul>
+      </div>
     </nav>
   )
 }

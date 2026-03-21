@@ -1,53 +1,9 @@
-/* ===== NAVBAR NO TOPO ===== */
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    padding: 12px 0;
-
-    background-color: #565656bf;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-
-    display: flex;
-    justify-content: center; /* CENTRALIZA HORIZONTAL */
-
-    z-index: 1000;
+.link.active {
+  color: #7e7777af;
+  border-bottom: 2px solid #fff;
 }
 
-/* ===== LISTA CENTRAL ===== */
-
-.navbar-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-
-    align-items: center; /* CENTRALIZA VERTICAL */
-}
-
-/* ===== LINKS ===== */
-
-.navbar-list a {
-    display: block;
-    padding: 8px 16px;
-
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
-
-    border-radius: 8px;
-    transition: all 0.2s ease;
-}
-
-/* ===== HOVER ===== */
-
-.navbar-list a:hover {
-    background-color:rgb(11, 53, 80);
-    color: #ffffff;
+.custom-navbar {
+  background-color: #5b2a86;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }

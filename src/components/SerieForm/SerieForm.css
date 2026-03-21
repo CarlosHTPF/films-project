@@ -1,76 +1,42 @@
-/* ===== CONTAINER DO FORM ===== */
-
-.serie-form {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 25px;
-
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-}
-
-/* ===== TÍTULO ===== */
-
-.serie-form h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #0b3550;
-}
-
-/* ===== GRUPO (LINHA TIPO TABELA) ===== */
-
-.form-group {
-  display: grid;
-  grid-template-columns: 180px 1fr;
+/* FUNDO GERAL COM IMAGEM */
+.serie-section {
+  min-height: 100vh;
+  background-size: contain;
+  display: flex;
   align-items: center;
-  margin-bottom: 12px;
 }
 
-/* ===== LABEL ===== */
-
-.form-group label {
-  font-weight: 500;
-  color: #333;
-}
-
-/* ===== INPUTS ===== */
-
-.form-group input {
-  padding: 8px 10px;
-  border: 1px solid #dcdcdc;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-/* ===== BOTÃO ===== */
-
-button {
-  margin-top: 20px;
-  width: 100%;
-  padding: 10px;
-
-  background: #0b3550;
-  color: #fff;
+/* CARD CENTRAL */
+.serie-card {
+  border-radius: 12px;
+  background: #fff;
   border: none;
-  border-radius: 8px;
-
-  font-size: 15px;
-  cursor: pointer;
-  transition: 0.2s ease;
 }
 
-button:hover {
-  background: #06324a;
+/* TÍTULO */
+.titulo {
+  color: #6f2dbd;
+  font-weight: bold;
 }
 
-.input-error {
-  border: 1px solid red;
+/* INPUT PADRÃO */
+.form-control {
+  border-radius: 6px;
+  padding: 10px;
 }
 
-.error-text {
-  color: red;
-  font-size: 0.85rem;
-  margin-top: 4px;
-  display: block;
+/* LABEL */
+.form-label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* BOTÕES */
+.btn-primary {
+  background-color: #3b82f6;
+  border: none;
+}
+
+.btn-outline-secondary {
+  border-radius: 6px;
 }
