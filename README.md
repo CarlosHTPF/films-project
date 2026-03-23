@@ -1,4 +1,6 @@
-# Projeto – Fase 1
+# Projeto – Fase 2
+
+---
 
 ## Descrição
 
@@ -14,6 +16,8 @@ Os dados são armazenados no LocalStorage do navegador.
 - Vite
 - React Router DOM
 - LocalStorage
+- Axios
+- Bootstrap / CSS
 
 ---
 
@@ -22,15 +26,23 @@ Os dados são armazenados no LocalStorage do navegador.
 1. Instalar as dependências:
 npm install
 
-2. Executar o projeto:
+2. Instalar as bibliotecas do projeto: 
+npm install axios react-router-dom bootstrap
+
+3. Executar o projeto:
 npm run dev
 
-3. Acessar no navegador:
+4. Acessar no navegador:
 http://localhost:5173
 
 ---
 
 ## Testes
+
+Os testes unitários foram implementados utilizando Vitest.
+
+1. Para executar:
+npx vitest
 
 - Para verificar as validações do formulário, clique em **"Adicionar Série"** e tente enviar com campos vazios ou inválidos.
 
@@ -38,28 +50,30 @@ http://localhost:5173
 
 ## Paginas do projeto 
 
- - Pagina 
+ - Página 
 
- ![alt text](/assets/image.png)
+ ![alt text](./assets/image.png)
 
  - Sobre 
 
-![alt text](/assets/image-1.png)
+![alt text](./assets/image-1.png)
 
- - Cadastrar series (SerieForm)
+ - Cadastrar séries (SerieForm)
 
-![alt text](/assets/image-2.png)
+![alt text](./assets/image-2.png)
 
  Validação do SerieForm
 
-![alt text](/assets/image-4.png)
-
- - Lista de series (SerieList)
-
- Edição das series
 ![alt text](./assets/image-3.png)
 
-![alt text](/assets/image-5.png)
+ - Lista de séries (SerieList)
+
+![alt text](./assets/image-4.png)
+
+ Edição das series
+
+![alt text](./assets/image-5.png)
+
 ---
 
 ## Componentes
@@ -78,6 +92,13 @@ Página inicial de recepção do usuário.
 
 ### Sobre
 Página com informações sobre o projeto.
+
+### useSeries (Hook)
+Responsável por gerenciar o estado das séries, incluindo:
+- Adição
+- Edição
+- Remoção
+- Persistência no LocalStorage
 
 ---
 
